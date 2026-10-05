@@ -352,7 +352,7 @@ m1_core/
   （`:179-180`）、网络错误→`ConnectionError`（`:181-182`）。
 - 注入 `transport` 的离线测试路径不触网、不受此边界约束（`:209`）。
 - 本会话实测（fail-closed 探针）：`http://api.example.com`（明文）、`https://user:pw@…`（userinfo）、
-  `https://127.0.0.1`（回环）、`https://169.254.169.254`（云元数据）、`https://100.64.0.2`（CGNAT）
+  `https://127.0.0.1`（回环）、`https://169.254.169.254`（云元数据）、`https://100.100.0.2`（CGNAT）
   全部 REJECTED。
 - 证据：`src/m1_core/model_client.py:102-150,153-191`。
 - [v2Δ D-15（后半）: 安全边界条款（v1 完全未写；提交门禁安全扫描高危修复，缺省传输由
